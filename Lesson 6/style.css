@@ -1,0 +1,114 @@
+@font-face {
+	font-family: Roboto;
+	font-weight: 700;
+	src: local('Roboto-Bold');
+	src: url('/Roboto/Roboto-Bold.ttf');
+	format: ('ttf');
+}
+@font-face {
+	font-family: Roboto;
+	font-weight: 400;
+	src: local('Roboto-Regular');
+	src: url('/Roboto/Roboto-Regular.ttf');
+	format: ('ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-family: inherit;
+}
+input[type='button'],
+input[type='reset'],
+button {
+	cursor: pointer;
+}
+
+body {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.container {
+	max-width: 527px;
+	margin: 100px auto;
+}
+form {
+	background: #7d7dfc;
+	border-radius: 12px;
+	padding: 20px;
+}
+
+form h2 {
+	background: linear-gradient(90.13deg, #f8145a 0.84%, #34b2c6 99.96%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	margin-bottom: 20px;
+}
+form h3 {
+	font-size: 14px;
+	line-height: 17px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #83838a;
+	margin-bottom: 10px;
+}
+form textarea {
+	height: 180px;
+	resize: none;
+}
+.input {
+	background: #ffffff;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	line-height: 26px;
+	border-radius: 8px;
+	padding: 11px 10px 10px;
+	margin-bottom: 20px;
+	border: 2px solid transparent;
+	transition: 0.3s ease-in-out;
+}
+.input:focus {
+	border-color: #24a3ff;
+}
+.btn {
+	padding: 16px 24px 17px;
+	background: #24a3ff;
+	color: white;
+	display: block;
+	box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+	border-radius: 12px;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	font-weight: bold;
+	transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+	background: #0085ff;
+	box-shadow: 0 0 30px rgba(36, 163, 255, 0.5);
+}
+.btn:active {
+	background: #006ccf;
+}
+form .btn {
+	max-width: 250px;
+	width: 100%;
+	margin: 0 auto;
+}

@@ -1,0 +1,185 @@
+body {
+	margin: 0;
+}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1330px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header {
+	padding: 30px 0;
+	background: blue;
+}
+.header-wrap {
+	display: flex;
+	align-items: center;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	margin-left: 15px;
+}
+.nav-item + .nav-item {
+	padding-left: 15px;
+}
+.nav-link {
+	color: #fff;
+	text-decoration: none;
+}
+.nav-link:hover {
+	opacity: 0.7;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	background: red;
+	margin: 0 -15px;
+}
+.col {
+	padding: 0 15px 30px;
+	width: 25%;
+}
+
+.lex-item {
+	background: yellow;
+	font-size: 80px;
+}
+
+.main {
+	background: green;
+	flex-grow: 1;
+}
+.footer {
+	padding: 30px;
+	background: peru;
+	color: #fff;
+	text-align: center;
+}
+
+.relative {
+	position: relative;
+	min-height: 100vn;
+}
+
+.p-sticky {
+	position: sticky;
+	top: 30px;
+	left: 50px;
+}
+.fixed {
+	position: fixed;
+	top: 50px;
+	left: 50%;
+}
+
+.absolute {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	background-color: gold;
+	position: relative;
+	min-height: 100vh;
+}
+.inner {
+	background: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 250px;
+	width: 250px;
+}
+
+.box::before,
+.inner::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 1px;
+	background: black;
+	transform: translateX(-50%);
+}
+
+.box::after,
+.inner::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	height: 1px;
+	background: black;
+	transform: translateY(-50%);
+}
+
+.holder {
+	min-height: 100vh;
+	position: relative;
+}
+.btn {
+	display: inline-block;
+	background: darkorchid;
+	padding: 15px 30px;
+	border-radius: 4px;
+	color: yellow;
+
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: yellow;
+	color: darkorchid;
+}
+.holder .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.holder .btn:hover {
+	transition: all 4s ease-in-out;
+	transform: translate(-50%, -50%) scale(0.7) rotate(-360deg) skew(25deg);
+}

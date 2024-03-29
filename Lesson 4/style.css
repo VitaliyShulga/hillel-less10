@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+}
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+.holder {
+	overflow: hidden;
+	overflow-x: auto;
+	max-width: 100%;
+}
+
+table {
+	width: 810px;
+	margin-bottom: 20px;
+	border-spacing: 0;
+	border: 1px solid #000;
+}
+
+td {
+	text-align: center;
+}
+
+th,
+td {
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+th:last-child,
+td:last-child {
+	border-right: none;
+}
+
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+.table tBody tr:last-child td {
+	border-bottom: 1px solid #000;
+}
+
+form {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+input[type="text"] {
+	height: 35px;
+}
+
+input,
+textarea {
+	display: inline-block;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 5px 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+	margin-bottom: 0;
+}
+
+textarea {
+	height: 80px;
+	resize: none;
+	
+}
+
+form .row {
+	display: flex;
+	align-items: center;
+	margin: 0 -15px;
+}
+
+form .col {
+	padding: 0 15px 20px;
+	width: 50%;
+}
+
+/*th,
+td {
+	border: 1px solid;
+}

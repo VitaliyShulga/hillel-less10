@@ -1,0 +1,39 @@
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.box {
+	border: 6px solid yellow;
+	background: green;
+	padding: 20px;
+	margin: 20px auto;
+	width: 350px;
+}
+.content-box {
+	box-sizing: -box;
+}
+
+span {
+	margin: 15px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	float: left;
+}
+
+ul li + li {
+	padding-left: 20px;
+}
